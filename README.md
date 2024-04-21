@@ -2,32 +2,36 @@
 
 ## Development
 
-1. Git clone from https://github.com/Alekxys29/mini-project-nodejs.git
+1. Clone from `git clone https://github.com/Alekxys29/mini-project-nodejs.git`
 
-2. Assuming you already have a MySQL installed and running on your local machine. This requires a local test DB which in this case, I'm using `sample_db` as the DB name. Feel free to change this if you have a different DB name on your local. Go to `/config/config.json` and change the `database` attribute under `development`.
+2. Assuming you already have a MySQL installed and running on your local machine. This requires a local test DB which in this case, I'm using `sample_db` as the DB name. 
 
 3. Navigate to the project folder
 
-4. Find and rename the `.env.example` file into `.env` file
+4. Go to `/config/config.json`
 
-5. Open a new terminal
+5. Change the `username`, `password`, `database` and `host` attributes under `development` depending on your local setup.
 
-6. Run `npm install` to install all of its dependencies.
+6. Find and rename the `.env.example` file into `.env` file
 
-7. Run `npm install -g nodemon`
+7. Open a new terminal
 
-8. If your database doesn't exist yet, you can just call `npx sequelize-cli db:create` command. With proper access it will create that database for you.
+8. Run `npm install` to install all of its dependencies.
 
-8. Run `npx sequelize-cli db:migrate` to create all required tables
+9. Run `npm install -g nodemon`
 
-9. Run `npx sequelize-cli db:seed:all` to seed all initial values
+10. If your database doesn't exist yet, you can just call `npx sequelize-cli db:create` command. With proper access it will create that database for you, otherwise skip this step.
 
-9. Run `nodemon index.js` to start the node server.
+11. Run `npx sequelize-cli db:migrate` to create all required tables
 
-9. Done
+12. Run `npx sequelize-cli db:seed:all` to seed all initial data
+
+13. Run `nodemon index.js` to start the node server.
+
+14. Done
 
 
-## Available API Routes
+## API Routes
 
 * `/api/treasures`
 * `/api/moneyvalues`

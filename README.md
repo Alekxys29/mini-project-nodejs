@@ -16,6 +16,8 @@
 
 7. Run `npm install -g nodemon`
 
+8. If your database doesn't exist yet, you can just call `npx sequelize-cli db:create` command. With proper access it will create that database for you.
+
 8. Run `npx sequelize-cli db:migrate` to create all required tables
 
 9. Run `npx sequelize-cli db:seed:all` to seed all initial values

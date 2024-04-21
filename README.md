@@ -16,9 +16,9 @@
 
 7. Run `npm install -g nodemon`
 
-8. Run `npx sequelize db:migrate` to create all required tables
+8. Run `npx sequelize-cli db:migrate` to create all required tables
 
-9. Run `npx sequelize db:seed:all` to seed all initial values
+9. Run `npx sequelize-cli db:seed:all` to seed all initial values
 
 9. Run `nodemon index.js` to start the node server.
 
@@ -33,7 +33,7 @@
 ## Route List (Treasure)
 
 1. Find Treasure (main objective). 
-    * Note: I added `Basic Auth` on this endpoint to make use of `users` table. The credentials are `email` and `password`. 
+    * _Note_: I added `Basic Auth` on this endpoint to make use of `users` table. The credentials are `email` and `password`. 
     * Feel free to remove the `auth` under `/routes/treasureRouter.js` if not needed.
 
 ```
@@ -54,10 +54,14 @@ Body raw (json):
 ```
 
 2. Get All Treasures
-`GET http://localhost:3000/api/treasures`
+```
+GET http://localhost:3000/api/treasures
+```
 
 3. Get One Treasure
-`GET http://localhost:3000/api/treasures/101`
+```
+GET http://localhost:3000/api/treasures/101
+```
 
 4. Add New Treasure
 ```
@@ -84,20 +88,28 @@ Body raw (json):
 ```
 
 5. Delete a Treasure
-`DELETE http://localhost:3000/api/treasures/101`
+```
+DELETE http://localhost:3000/api/treasures/101
+```
 
 
 ## Route List (MoneyValue)
 
 1. Get All Money Value
-`GET http://localhost:3000/api/moneyvalues`
+```
+GET http://localhost:3000/api/moneyvalues
+```
 
 
 2. Get Money Value by ID
-`GET http://localhost:3000/api/moneyvalues/1`
+```
+GET http://localhost:3000/api/moneyvalues/1
+```
 
 3. Get Money Value by Treasure ID
-`GET http://localhost:3000/api/moneyvalues/treasure/101`
+```
+GET http://localhost:3000/api/moneyvalues/treasure/101
+```
 
 4. Add New Money Value
 ```
@@ -123,8 +135,9 @@ Body raw (json):
 ```
 
 5. Delete Money Value
-`DELETE http://localhost:3000/api/moneyvalues/1`
-
+```
+DELETE http://localhost:3000/api/moneyvalues/1
+```
 
 ## Postman Collection
 

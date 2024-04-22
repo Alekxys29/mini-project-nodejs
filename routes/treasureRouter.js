@@ -4,7 +4,7 @@ const router = require('express').Router();
 
 router.get('/', treasureController.getAllTreasures);
 router.post('/', treasureController.addTreasure);
-router.get('/findTreasure', auth, treasureController.findTreasure);
+router.get('/findTreasure', treasureController.findTreasure);
 
 router.get('/:id', treasureController.getOneTreasure);
 router.put('/:id', treasureController.updateTreasure);
